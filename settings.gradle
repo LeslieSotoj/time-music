@@ -1,0 +1,34 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "music-time"
+include ':app'
+include ':domain'
+include ':common'
+include ':data'
+include ':usecases'
+include ':common:theme'
+include ':common:components'
+include ':features'
+include ':presentation:login'
+include ':presentation:home'
+include ':features:search'
+include ':features:onboarding'
+include ':features:musicplayer'
+include ':features:splash'
+include ':features:favourites'
+include ':features:home'
+include ':features:bottombar'
+include ':features:login'
+include ':common:core'
